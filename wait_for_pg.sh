@@ -12,7 +12,7 @@ echo DB_PORT=$port
 
 until nc -z $host $port; do
   echo "Postgres is unavailable - sleeping"
-  sleep 1
+  sleep 3
 done
 
 >&2 echo "Postgres up - executing command"
